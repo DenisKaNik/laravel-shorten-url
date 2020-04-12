@@ -26,7 +26,7 @@
 
 <body>
 
-    <div class="wrapper">
+    <div class="wrapper" id="app">
 
         <!-- ======= Header ======= -->
         <header id="header" class="d-flex align-items-center">
@@ -35,19 +35,7 @@
                 <h1>Shorten URL</h1>
                 <h2>This application is intended to demonstrate the creation of short URLs on Laravel.</h2>
 
-                <div class="subscribe">
-                    <h4>Paste the URL to be shortened!</h4>
-                    <form method="post" role="form">
-                        <div class="subscribe-form">
-                            <input type="text" name="textUrl"><input type="submit" value="Create">
-                        </div>
-                        <div class="mt-2">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your notification request was sent. Thank you!</div>
-                        </div>
-                    </form>
-                </div>
+                <create-shorten-url></create-shorten-url>
             </div>
         </header><!-- End #header -->
 
