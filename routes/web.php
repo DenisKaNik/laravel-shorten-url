@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/{short_url}', 'Api\\ShortenUrlController@redirect')->where('short_url', '[a-zA-Z0-9]{6}');
