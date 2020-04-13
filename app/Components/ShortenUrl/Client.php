@@ -6,7 +6,7 @@ use Illuminate\Support\Str;
 
 class Client
 {
-    /* @var DbStorage $driver */
+    /* @var DbStorage|FileStorage $driver */
     protected $driver;
 
     /**
